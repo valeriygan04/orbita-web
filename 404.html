@@ -2,6 +2,16 @@
 <html lang="cs">
 <head>
   <meta charset="utf-8">
+  <!-- Hosting servíruje 404.html pro jakoukoli adresu, i vnořenou (/a/b/x). Relativní cesty k CSS/JS/odkazům
+       by se pak vyhodnotily vůči /a/b/. Na http(s) proto nastavíme <base> na kořen webu:
+       GitHub Pages projektu = /<repozitář>/, jinak /. Na file:// se nic nemění. -->
+  <script>
+    if (location.protocol !== 'file:') {
+      var b = document.createElement('base');
+      b.href = /\.github\.io$/.test(location.hostname) ? '/' + location.pathname.split('/')[1] + '/' : '/';
+      document.head.appendChild(b);
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stránka nenalezena – Orbita 2027</title>
   <meta name="description" content="Požadovaná stránka na webu festivalu Orbita 2027 neexistuje.">
