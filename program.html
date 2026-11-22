@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Program festivalu Orbita 2027 – projekce, debaty, pozorování</title>
+  <meta name="description" content="Kompletní program festivalu Orbita 2027: projekce, debaty, přednášky, pozorování oblohy a dětský program. Filtrujte podle dne, scény, typu a věku.">
+  <link rel="canonical" href="https://www.orbita-festival.example/program.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Orbita 2027">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:title" content="Program festivalu Orbita 2027 – projekce, debaty, pozorování">
+  <meta property="og:description" content="Kompletní program festivalu Orbita 2027: projekce, debaty, přednášky, pozorování oblohy a dětský program. Filtrujte podle dne, scény, typu a věku.">
+  <meta property="og:url" content="https://www.orbita-festival.example/program.html">
+  <meta property="og:image" content="https://www.orbita-festival.example/images/og-orbita.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Orbita 2027 – festival sci-fi filmu a vědy, 12.–15. srpna 2027, Ondřejov">
+  <meta name="theme-color" content="#0b1530">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "Program – Orbita 2027",
+ "description": "Kompletní program festivalu Orbita 2027.",
+ "url": "https://www.orbita-festival.example/program.html",
+ "inLanguage": "cs",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Orbita 2027",
+  "url": "https://www.orbita-festival.example/"
+ }
+}</script>
+</head>
+<body data-stranka="program">
+  <a class="skip" href="#obsah">Přejít na obsah</a>
+  <header class="hlavicka">
+    <div class="obal">
+      <div class="hlavicka__radek">
+        <p class="logo"><a href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><ellipse cx="16" cy="16" rx="13" ry="6" fill="none" stroke="#5fd3e6" stroke-width="2" transform="rotate(-25 16 16)"/><circle cx="16" cy="16" r="5" fill="#ffc857"/><circle cx="27" cy="11" r="2" fill="#f2f4fa"/></svg><span>Orbita <small>2027</small></span></a></p>
+        <button type="button" class="menu-tlacitko" aria-expanded="false" aria-controls="hlavni-nav" hidden>Menu</button>
+        <form class="hledani" role="search" action="hledat.html" method="get">
+          <label class="vh" for="q">Hledat na webu</label>
+          <input type="search" id="q" name="q" placeholder="Hosté, filmy, program…" autocomplete="off">
+          <button type="submit">Hledat</button>
+        </form>
+      </div>
+      <nav class="hlavni-nav" id="hlavni-nav" aria-label="Hlavní navigace">
+        <ul>
+          <li><a href="program.html" aria-current="page">Program</a></li>
+          <li><a href="ucinkujici.html">Hosté a tvůrci</a></li>
+          <li><a href="filmy.html">Filmy</a></li>
+          <li><a href="sceny.html">Scény</a></li>
+          <li><a href="prakticke-informace.html">Praktické info</a></li>
+          <li><a href="vstupenky.html">Vstupenky</a></li>
+          <li><a href="muj-program.html">Můj program<span data-pocet></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="obsah" class="obal" tabindex="-1">
+    <h1>Program</h1>
+    <p>71 položek programu na pěti scénách od čtvrtka 12. do neděle 15. srpna 2027. Vyberte den, scénu nebo typ akce a uložte si, co nechcete zmeškat, do <a href="muj-program.html">Můj program</a>.</p>
+    <div class="se-filtrem">
+      <details class="filtr" open>
+        <summary>Filtr programu</summary>
+        <form id="filtr-programu" action="program.html" method="get">
+          <fieldset>
+            <legend>Den</legend>
+            <div class="volby">
+              <label><input type="radio" name="den" value="" checked> Všechny dny</label>
+              <label><input type="radio" name="den" value="2027-08-12"> Čtvrtek 12. 8.</label>
+              <label><input type="radio" name="den" value="2027-08-13"> Pátek 13. 8.</label>
+              <label><input type="radio" name="den" value="2027-08-14"> Sobota 14. 8.</label>
+              <label><input type="radio" name="den" value="2027-08-15"> Neděle 15. 8.</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Scéna</legend>
+            <div class="volby">
+              <label><input type="checkbox" name="scena" value="kopule"> Letní kino Kopule</label>
+              <label><input type="checkbox" name="scena" value="planeta"> Sál Planeta</label>
+              <label><input type="checkbox" name="scena" value="teorie"> Stan Teorie</label>
+              <label><input type="checkbox" name="scena" value="pozorovatelna"> Noční pozorovatelna</label>
+              <label><input type="checkbox" name="scena" value="louka"> Raketová louka</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Typ akce</legend>
+            <div class="volby">
+              <label><input type="checkbox" name="typ" value="projekce"> Projekce</label>
+              <label><input type="checkbox" name="typ" value="debata"> Debata</label>
+              <label><input type="checkbox" name="typ" value="prednaska"> Přednáška</label>
+              <label><input type="checkbox" name="typ" value="pozorovani"> Pozorování</label>
+              <label><input type="checkbox" name="typ" value="workshop"> Workshop</label>
+              <label><input type="checkbox" name="typ" value="detsky"> Dětský program</label>
+            </div>
+          </fieldset>
+          <div class="pole">
+            <label for="zanr">Sci-fi subžánr filmu</label>
+            <select id="zanr" name="zanr">
+              <option value="">Všechny</option>
+              <option value="hard-scifi">Hard sci-fi</option>
+              <option value="kosmicka-opera">Kosmická opera</option>
+              <option value="dystopie">Dystopie</option>
+              <option value="dokument">Dokument</option>
+              <option value="klasika">Klasika</option>
+              <option value="kratky">Krátký film</option>
+              <option value="rodinny">Rodinný</option>
+              <option value="animovany">Animovaný</option>
+            </select>
+          </div>
+          <div class="pole">
+            <label for="vek">Vhodné pro věk</label>
+            <select id="vek" name="vek">
+              <option value="">Bez omezení</option>
+              <option value="4">od 4 let</option>
+              <option value="6">od 6 let</option>
+              <option value="8">od 8 let</option>
+              <option value="12">od 12 let</option>
+              <option value="15">od 15 let</option>
+            </select>
+          </div>
+          <div class="volby"><label><input type="checkbox" name="bezbarierove" value="1"> Jen plně bezbariérové scény</label></div>
+          <div class="akce">
+            <button type="submit" class="tlacitko--hlavni">Použít filtr</button>
+            <a class="tlacitko" href="program.html">Zrušit filtry</a>
+            <button type="button" id="kopirovat-odkaz" hidden>Kopírovat odkaz na výběr</button>
+          </div>
+          <div class="pole" id="odkaz-vyberu" hidden>
+            <label for="odkaz-vyberu-pole">Odkaz na výběr</label>
+            <input type="text" id="odkaz-vyberu-pole" readonly>
+          </div>
+        </form>
+      </details>
+      <div>
+        <p id="stav" class="stav" role="status"></p>
+        <div id="vysledky">
+          <noscript><p class="panel upozorneni">Program se zobrazuje pomocí JavaScriptu. Zapněte jej, prosím. Základní informace najdete na stránkách <a href="sceny.html">Scény</a> a <a href="prakticke-informace.html">Praktické informace</a>.</p></noscript>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="paticka">
+    <div class="obal paticka__mrizka">
+      <section aria-labelledby="pat-festival">
+        <h2 id="pat-festival">Orbita 2027</h2>
+        <p>2. ročník festivalu sci-fi filmu a vědy<br><time datetime="2027-08-12">12.</time>–<time datetime="2027-08-15">15. srpna 2027</time></p>
+        <address>Orbita z. s. (fiktivní spolek)<br>Pole pod kopulí, 251 65 Ondřejov<br><a href="mailto:info@orbita-festival.example">info@orbita-festival.example</a></address>
+      </section>
+      <nav aria-labelledby="pat-info">
+        <h2 id="pat-info">Informace</h2>
+        <ul>
+          <li><a href="o-festivalu.html">O festivalu</a></li>
+          <li><a href="faq.html">Časté dotazy</a></li>
+          <li><a href="obloha.html">Dnešní obloha</a></li>
+          <li><a href="prakticke-informace.html#doprava">Doprava</a></li>
+          <li><a href="prakticke-informace.html#pristupnost">Přístupnost</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="pat-web">
+        <h2 id="pat-web">O tomto webu</h2>
+        <p>Orbita je fiktivní festival vytvořený pro studijní projekt. Všechny osoby, filmy a organizace jsou smyšlené. Festival ani pořadatel nejsou spojeni s hvězdárnou v Ondřejově.</p>
+      </section>
+    </div>
+  </footer>
+  <div id="oznameni" class="vh" role="status" aria-live="polite"></div>
+</body>
+</html>

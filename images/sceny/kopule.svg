@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <title>Letní kino Kopule v noci</title>
+  <defs>
+    <linearGradient id="nebe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060d22"/>
+      <stop offset="1" stop-color="#1b2d5e"/>
+    </linearGradient>
+    <linearGradient id="paprsek" x1="1" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#fff2c4" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#fff2c4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stopa" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffc857" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffe7a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#nebe)"/>
+  <g fill="#f2f4fa">
+    <circle cx="40" cy="30" r="1.5"/><circle cx="120" cy="80" r="1"/><circle cx="190" cy="25" r="1.2"/>
+    <circle cx="260" cy="60" r="1"/><circle cx="560" cy="40" r="1.5"/><circle cx="640" cy="90" r="1"/>
+    <circle cx="700" cy="30" r="1.2"/><circle cx="760" cy="70" r="1.5"/><circle cx="80" cy="140" r="1"/>
+    <circle cx="730" cy="150" r="1"/><circle cx="20" cy="200" r="1"/><circle cx="780" cy="210" r="1"/>
+  </g>
+  <line x1="610" y1="60" x2="690" y2="10" stroke="url(#stopa)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- paprsek projektoru (za plátnem) -->
+  <polygon points="400,424 205,70 595,70" fill="url(#paprsek)" opacity="0.5"/>
+  <!-- plátno -->
+  <rect x="200" y="60" width="400" height="200" rx="4" fill="#f2f4fa" fill-opacity="0.95"/>
+  <rect x="212" y="72" width="376" height="176" fill="#0b1530"/>
+  <ellipse cx="400" cy="160" rx="150" ry="34" fill="none" stroke="#5fd3e6" stroke-width="2" transform="rotate(-10 400 160)"/>
+  <circle cx="400" cy="160" r="46" fill="#ffc857"/>
+  <path d="M400 114 a46 46 0 0 1 0 92" fill="#e0a93a"/>
+  <circle cx="530" cy="122" r="8" fill="#5fd3e6"/>
+  <g fill="#f2f4fa"><circle cx="250" cy="100" r="1.5"/><circle cx="300" cy="220" r="1.2"/><circle cx="520" cy="210" r="1.5"/><circle cx="560" cy="90" r="1"/></g>
+  <rect x="226" y="260" width="10" height="70" fill="#7c8bb5"/>
+  <rect x="564" y="260" width="10" height="70" fill="#7c8bb5"/>
+  <!-- tráva a hlediště -->
+  <path d="M0 330 Q400 300 800 330 V450 H0 Z" fill="#0b1530"/>
+  <g fill="#060d22">
+    <g id="rada1">
+      <circle cx="90" cy="356" r="10"/><rect x="76" y="364" width="28" height="22" rx="8"/>
+      <circle cx="160" cy="352" r="10"/><rect x="146" y="360" width="28" height="22" rx="8"/>
+      <circle cx="230" cy="350" r="10"/><rect x="216" y="358" width="28" height="22" rx="8"/>
+      <circle cx="300" cy="348" r="10"/><rect x="286" y="356" width="28" height="22" rx="8"/>
+      <circle cx="370" cy="347" r="10"/><rect x="356" y="355" width="28" height="22" rx="8"/>
+      <circle cx="440" cy="347" r="10"/><rect x="426" y="355" width="28" height="22" rx="8"/>
+      <circle cx="510" cy="348" r="10"/><rect x="496" y="356" width="28" height="22" rx="8"/>
+      <circle cx="580" cy="350" r="10"/><rect x="566" y="358" width="28" height="22" rx="8"/>
+      <circle cx="650" cy="352" r="10"/><rect x="636" y="360" width="28" height="22" rx="8"/>
+      <circle cx="720" cy="356" r="10"/><rect x="706" y="364" width="28" height="22" rx="8"/>
+    </g>
+    <use href="#rada1" transform="translate(-35 52) scale(1.05)"/>
+  </g>
+  <!-- projekční kabina -->
+  <rect x="372" y="412" width="56" height="38" rx="4" fill="#15244d" stroke="#7c8bb5"/>
+  <circle cx="400" cy="424" r="6" fill="#fff2c4"/>
+</svg>

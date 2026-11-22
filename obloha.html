@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dnešní obloha a Perseidy – Orbita 2027</title>
+  <meta name="description" content="Kdy se setmí, kdy zapadá Měsíc a kolik meteorů Perseid lze čekat každý festivalový večer Orbity 2027 v Ondřejově.">
+  <link rel="canonical" href="https://www.orbita-festival.example/obloha.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Orbita 2027">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:title" content="Dnešní obloha a Perseidy – Orbita 2027">
+  <meta property="og:description" content="Kdy se setmí, kdy zapadá Měsíc a kolik meteorů Perseid lze čekat každý festivalový večer Orbity 2027 v Ondřejově.">
+  <meta property="og:url" content="https://www.orbita-festival.example/obloha.html">
+  <meta property="og:image" content="https://www.orbita-festival.example/images/og-orbita.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Orbita 2027 – festival sci-fi filmu a vědy, 12.–15. srpna 2027, Ondřejov">
+  <meta name="theme-color" content="#0b1530">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "Dnešní obloha a Perseidy – Orbita 2027",
+ "description": "Podmínky pro pozorování Perseid po festivalových večerech.",
+ "url": "https://www.orbita-festival.example/obloha.html",
+ "inLanguage": "cs",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Orbita 2027",
+  "url": "https://www.orbita-festival.example/"
+ }
+}</script>
+</head>
+<body data-stranka="obloha">
+  <a class="skip" href="#obsah">Přejít na obsah</a>
+  <header class="hlavicka">
+    <div class="obal">
+      <div class="hlavicka__radek">
+        <p class="logo"><a href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><ellipse cx="16" cy="16" rx="13" ry="6" fill="none" stroke="#5fd3e6" stroke-width="2" transform="rotate(-25 16 16)"/><circle cx="16" cy="16" r="5" fill="#ffc857"/><circle cx="27" cy="11" r="2" fill="#f2f4fa"/></svg><span>Orbita <small>2027</small></span></a></p>
+        <button type="button" class="menu-tlacitko" aria-expanded="false" aria-controls="hlavni-nav" hidden>Menu</button>
+        <form class="hledani" role="search" action="hledat.html" method="get">
+          <label class="vh" for="q">Hledat na webu</label>
+          <input type="search" id="q" name="q" placeholder="Hosté, filmy, program…" autocomplete="off">
+          <button type="submit">Hledat</button>
+        </form>
+      </div>
+      <nav class="hlavni-nav" id="hlavni-nav" aria-label="Hlavní navigace">
+        <ul>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="ucinkujici.html">Hosté a tvůrci</a></li>
+          <li><a href="filmy.html">Filmy</a></li>
+          <li><a href="sceny.html">Scény</a></li>
+          <li><a href="prakticke-informace.html">Praktické info</a></li>
+          <li><a href="vstupenky.html">Vstupenky</a></li>
+          <li><a href="muj-program.html">Můj program<span data-pocet></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="obsah" class="obal" tabindex="-1">
+    <h1>Dnešní obloha</h1>
+    <p>Orbita se koná v době maxima meteorického roje Perseidy. Přehled ukazuje pro každý festivalový večer, kdy bude úplná tma, kdy zapadne Měsíc a jak dobré budou podmínky pro pozorování.</p>
+    <div id="obloha-tabulka">
+      <noscript><p class="panel upozorneni">Tabulka podmínek se zobrazuje pomocí JavaScriptu. Zapněte jej, prosím. Pozorování v programu začíná každý večer kolem 22:00.</p></noscript>
+    </div>
+    <section aria-labelledby="h-jak">
+      <h2 id="h-jak">Jak pozorovat Perseidy</h2>
+      <ul>
+        <li>Dalekohled nepotřebujete. Meteory se pozorují pouhým okem, nejlépe vleže na lehátku nebo dece.</li>
+        <li>Oči si zvykají na tmu asi 20 minut. Nedívejte se mezitím do mobilu, nebo použijte červený filtr.</li>
+        <li>Nejvíc meteorů je vidět po půlnoci, kdy je radiant roje (souhvězdí Persea) výš nad obzorem, a po západu Měsíce.</li>
+        <li>V noci bývá i v srpnu chladno – vezměte si teplé oblečení.</li>
+      </ul>
+      <p><a class="tlacitko" href="program.html?typ=pozorovani">Všechna pozorování v programu</a></p>
+    </section>
+    <section aria-labelledby="h-udaje">
+      <h2 id="h-udaje">Co znamenají údaje</h2>
+      <dl>
+        <dt>ZHR</dt>
+        <dd>Zenitová hodinová frekvence: kolik meteorů by bylo vidět za hodinu za ideálně tmavé oblohy s radiantem v nadhlavníku. Skutečný počet je nižší.</dd>
+        <dt>Úplná tma</dt>
+        <dd>Okamžik, kdy je Slunce 18° pod obzorem a obloha je úplně tmavá.</dd>
+        <dt>Osvětlení Měsíce</dt>
+        <dd>Jak velká část Měsíce je osvětlená. Čím jasnější Měsíc nad obzorem, tím méně slabých meteorů uvidíte.</dd>
+      </dl>
+    </section>
+  </main>
+  <footer class="paticka">
+    <div class="obal paticka__mrizka">
+      <section aria-labelledby="pat-festival">
+        <h2 id="pat-festival">Orbita 2027</h2>
+        <p>2. ročník festivalu sci-fi filmu a vědy<br><time datetime="2027-08-12">12.</time>–<time datetime="2027-08-15">15. srpna 2027</time></p>
+        <address>Orbita z. s. (fiktivní spolek)<br>Pole pod kopulí, 251 65 Ondřejov<br><a href="mailto:info@orbita-festival.example">info@orbita-festival.example</a></address>
+      </section>
+      <nav aria-labelledby="pat-info">
+        <h2 id="pat-info">Informace</h2>
+        <ul>
+          <li><a href="o-festivalu.html">O festivalu</a></li>
+          <li><a href="faq.html">Časté dotazy</a></li>
+          <li><a href="obloha.html">Dnešní obloha</a></li>
+          <li><a href="prakticke-informace.html#doprava">Doprava</a></li>
+          <li><a href="prakticke-informace.html#pristupnost">Přístupnost</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="pat-web">
+        <h2 id="pat-web">O tomto webu</h2>
+        <p>Orbita je fiktivní festival vytvořený pro studijní projekt. Všechny osoby, filmy a organizace jsou smyšlené. Festival ani pořadatel nejsou spojeni s hvězdárnou v Ondřejově.</p>
+      </section>
+    </div>
+  </footer>
+  <div id="oznameni" class="vh" role="status" aria-live="polite"></div>
+</body>
+</html>

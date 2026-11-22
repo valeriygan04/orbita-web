@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <title>Raketová louka – start vodní rakety</title>
+  <defs>
+    <linearGradient id="den" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2e4380"/>
+      <stop offset="1" stop-color="#5fd3e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#den)"/>
+  <!-- slunce a oběžná dráha -->
+  <circle cx="120" cy="90" r="40" fill="#ffc857"/>
+  <ellipse cx="120" cy="90" rx="80" ry="22" fill="none" stroke="#fff2c4" stroke-width="2" transform="rotate(-15 120 90)"/>
+  <!-- mraky -->
+  <g fill="#f2f4fa" opacity="0.85">
+    <ellipse cx="560" cy="80" rx="60" ry="16"/><ellipse cx="600" cy="68" rx="36" ry="16"/>
+    <ellipse cx="300" cy="130" rx="44" ry="12"/>
+  </g>
+  <!-- louka -->
+  <path d="M0 330 Q250 290 520 315 T800 300 V450 H0 Z" fill="#2f6f5e"/>
+  <path d="M0 380 Q300 350 800 370 V450 H0 Z" fill="#245a4c"/>
+  <!-- dílenský stan -->
+  <path d="M560 340 L620 270 L680 340 Z" fill="#ffc857"/>
+  <path d="M620 270 L600 340 M620 270 L640 340" stroke="#0b1530" stroke-width="3"/>
+  <path d="M560 340 L620 270 L590 340 Z" fill="#0b1530" opacity="0.35"/>
+  <path d="M680 340 L740 270 L800 340 Z" fill="#15244d"/>
+  <path d="M620 270 H740" stroke="#7c8bb5" stroke-width="4"/>
+  <!-- startovací rampa a raketa -->
+  <path d="M380 360 l-24 30 M380 360 l24 30" stroke="#0b1530" stroke-width="5" stroke-linecap="round"/>
+  <g transform="rotate(12 400 150)">
+    <path d="M390 210 V140 Q400 110 410 140 V210 Z" fill="#f2f4fa" stroke="#0b1530" stroke-width="3"/>
+    <path d="M390 200 l-14 20 h14 Z M410 200 l14 20 h-14 Z" fill="#ff8a80" stroke="#0b1530" stroke-width="2"/>
+    <path d="M400 114 l-10 26 h20 Z" fill="#ff8a80" stroke="#0b1530" stroke-width="2"/>
+  </g>
+  <!-- vodní stopa -->
+  <path d="M385 226 C372 270 376 320 380 358" fill="none" stroke="#f2f4fa" stroke-width="6" stroke-dasharray="2 10" stroke-linecap="round" opacity="0.9"/>
+  <g fill="#f2f4fa" opacity="0.9"><circle cx="360" cy="300" r="3"/><circle cx="398" cy="310" r="3"/><circle cx="366" cy="338" r="2.5"/><circle cx="394" cy="345" r="2.5"/></g>
+  <!-- děti a dospělý (siluety) -->
+  <g fill="#0b1530">
+    <circle cx="240" cy="352" r="10"/><rect x="230" y="362" width="20" height="30" rx="7"/>
+    <path d="M232 368 l-18 -26" stroke="#0b1530" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="290" cy="360" r="9"/><rect x="281" y="369" width="18" height="26" rx="6"/>
+    <path d="M299 372 l16 -24" stroke="#0b1530" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="500" cy="340" r="12"/><rect x="488" y="352" width="24" height="44" rx="8"/>
+    <circle cx="530" cy="362" r="8"/><rect x="522" y="370" width="16" height="24" rx="6"/>
+    <circle cx="180" cy="366" r="8"/><rect x="172" y="374" width="16" height="24" rx="6"/>
+  </g>
+  <!-- květiny -->
+  <g fill="#ffc857"><circle cx="80" cy="410" r="4"/><circle cx="130" cy="425" r="4"/><circle cx="660" cy="420" r="4"/><circle cx="720" cy="405" r="4"/></g>
+</svg>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.orbita-festival.example/sitemap.xml

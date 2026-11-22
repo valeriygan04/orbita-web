@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hledání – Orbita 2027</title>
+  <meta name="description" content="Vyhledávání hostů, tvůrců, filmů a programu festivalu Orbita 2027.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://www.orbita-festival.example/hledat.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Orbita 2027">
+  <meta property="og:locale" content="cs_CZ">
+  <meta property="og:title" content="Hledání – Orbita 2027">
+  <meta property="og:description" content="Vyhledávání hostů, tvůrců, filmů a programu festivalu Orbita 2027.">
+  <meta property="og:url" content="https://www.orbita-festival.example/hledat.html">
+  <meta property="og:image" content="https://www.orbita-festival.example/images/og-orbita.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Orbita 2027 – festival sci-fi filmu a vědy, 12.–15. srpna 2027, Ondřejov">
+  <meta name="theme-color" content="#0b1530">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "Hledání – Orbita 2027",
+ "description": "Vyhledávání hostů, tvůrců, filmů a programu festivalu Orbita 2027.",
+ "url": "https://www.orbita-festival.example/hledat.html",
+ "inLanguage": "cs",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Orbita 2027",
+  "url": "https://www.orbita-festival.example/"
+ }
+}</script>
+</head>
+<body data-stranka="hledat">
+  <a class="skip" href="#obsah">Přejít na obsah</a>
+  <header class="hlavicka">
+    <div class="obal">
+      <div class="hlavicka__radek">
+        <p class="logo"><a href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><ellipse cx="16" cy="16" rx="13" ry="6" fill="none" stroke="#5fd3e6" stroke-width="2" transform="rotate(-25 16 16)"/><circle cx="16" cy="16" r="5" fill="#ffc857"/><circle cx="27" cy="11" r="2" fill="#f2f4fa"/></svg><span>Orbita <small>2027</small></span></a></p>
+        <button type="button" class="menu-tlacitko" aria-expanded="false" aria-controls="hlavni-nav" hidden>Menu</button>
+        <form class="hledani" role="search" action="hledat.html" method="get">
+          <label class="vh" for="q">Hledat na webu</label>
+          <input type="search" id="q" name="q" placeholder="Hosté, filmy, program…" autocomplete="off">
+          <button type="submit">Hledat</button>
+        </form>
+      </div>
+      <nav class="hlavni-nav" id="hlavni-nav" aria-label="Hlavní navigace">
+        <ul>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="ucinkujici.html">Hosté a tvůrci</a></li>
+          <li><a href="filmy.html">Filmy</a></li>
+          <li><a href="sceny.html">Scény</a></li>
+          <li><a href="prakticke-informace.html">Praktické info</a></li>
+          <li><a href="vstupenky.html">Vstupenky</a></li>
+          <li><a href="muj-program.html">Můj program<span data-pocet></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="obsah" class="obal" tabindex="-1">
+    <h1>Výsledky hledání</h1>
+    <p id="stav" class="stav" role="status"></p>
+    <div id="vysledky">
+      <noscript><p class="panel upozorneni">Vyhledávání vyžaduje JavaScript. Zkuste <a href="program.html">program</a> nebo <a href="ucinkujici.html">seznam hostů a tvůrců</a>.</p></noscript>
+    </div>
+  </main>
+  <footer class="paticka">
+    <div class="obal paticka__mrizka">
+      <section aria-labelledby="pat-festival">
+        <h2 id="pat-festival">Orbita 2027</h2>
+        <p>2. ročník festivalu sci-fi filmu a vědy<br><time datetime="2027-08-12">12.</time>–<time datetime="2027-08-15">15. srpna 2027</time></p>
+        <address>Orbita z. s. (fiktivní spolek)<br>Pole pod kopulí, 251 65 Ondřejov<br><a href="mailto:info@orbita-festival.example">info@orbita-festival.example</a></address>
+      </section>
+      <nav aria-labelledby="pat-info">
+        <h2 id="pat-info">Informace</h2>
+        <ul>
+          <li><a href="o-festivalu.html">O festivalu</a></li>
+          <li><a href="faq.html">Časté dotazy</a></li>
+          <li><a href="obloha.html">Dnešní obloha</a></li>
+          <li><a href="prakticke-informace.html#doprava">Doprava</a></li>
+          <li><a href="prakticke-informace.html#pristupnost">Přístupnost</a></li>
+        </ul>
+      </nav>
+      <section aria-labelledby="pat-web">
+        <h2 id="pat-web">O tomto webu</h2>
+        <p>Orbita je fiktivní festival vytvořený pro studijní projekt. Všechny osoby, filmy a organizace jsou smyšlené. Festival ani pořadatel nejsou spojeni s hvězdárnou v Ondřejově.</p>
+      </section>
+    </div>
+  </footer>
+  <div id="oznameni" class="vh" role="status" aria-live="polite"></div>
+</body>
+</html>

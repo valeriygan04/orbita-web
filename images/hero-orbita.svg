@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <title>Noční pole pod kopulí</title>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      .meteor { animation: let 7s ease-in infinite; opacity: 0; }
+      .m2 { animation-delay: 2.4s; }
+      .m3 { animation-delay: 4.6s; }
+      @keyframes let {
+        0%, 72% { opacity: 0; transform: translate(0, 0); }
+        76% { opacity: 1; }
+        100% { opacity: 0; transform: translate(-140px, 90px); }
+      }
+    }
+  </style>
+  <defs>
+    <linearGradient id="nebe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#060d22"/>
+      <stop offset="0.7" stop-color="#15244d"/>
+      <stop offset="1" stop-color="#2e4380"/>
+    </linearGradient>
+    <linearGradient id="stopa" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffc857" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffe7a8"/>
+    </linearGradient>
+    <radialGradient id="mesic" cx="0.4" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#fff8e1"/>
+      <stop offset="1" stop-color="#d9cfa8"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#nebe)"/>
+  <!-- oběžné dráhy -->
+  <g fill="none" stroke="#5fd3e6" stroke-opacity="0.35" stroke-width="1.5">
+    <ellipse cx="400" cy="330" rx="360" ry="110" transform="rotate(-8 400 330)"/>
+    <ellipse cx="400" cy="330" rx="270" ry="75" transform="rotate(-8 400 330)" stroke-dasharray="4 8"/>
+  </g>
+  <circle cx="742" cy="262" r="6" fill="#5fd3e6"/>
+  <!-- hvězdy -->
+  <g fill="#f2f4fa">
+    <circle cx="60" cy="40" r="1.5"/><circle cx="140" cy="110" r="1"/><circle cx="210" cy="60" r="2"/>
+    <circle cx="300" cy="140" r="1"/><circle cx="350" cy="30" r="1.5"/><circle cx="430" cy="90" r="1"/>
+    <circle cx="520" cy="50" r="2"/><circle cx="560" cy="150" r="1"/><circle cx="640" cy="100" r="1.5"/>
+    <circle cx="720" cy="40" r="1"/><circle cx="760" cy="160" r="1.5"/><circle cx="90" cy="190" r="1"/>
+    <circle cx="250" cy="210" r="1.5"/><circle cx="470" cy="200" r="1"/><circle cx="600" cy="230" r="1"/>
+    <circle cx="30" cy="260" r="1"/><circle cx="380" cy="250" r="1"/><circle cx="170" cy="20" r="1"/>
+  </g>
+  <circle cx="660" cy="80" r="26" fill="url(#mesic)"/>
+  <circle cx="672" cy="74" r="24" fill="#0b1530" fill-opacity="0.55"/>
+  <!-- meteory Perseid -->
+  <g stroke="url(#stopa)" stroke-width="2.5" stroke-linecap="round">
+    <line class="meteor m1" x1="420" y1="40" x2="520" y2="-25"/>
+    <line class="meteor m2" x1="250" y1="120" x2="330" y2="68"/>
+    <line class="meteor m3" x1="600" y1="170" x2="690" y2="112"/>
+  </g>
+  <line x1="140" y1="160" x2="200" y2="122" stroke="url(#stopa)" stroke-width="2" stroke-linecap="round"/>
+  <!-- kopec, kopule a plátno -->
+  <path d="M0 390 Q200 330 420 365 T800 350 V500 H0 Z" fill="#0b1530"/>
+  <path d="M560 352 a44 44 0 0 1 88 0 Z" fill="#15244d" stroke="#7c8bb5" stroke-width="2"/>
+  <rect x="600" y="314" width="8" height="10" fill="#0b1530"/>
+  <rect x="180" y="318" width="170" height="70" rx="3" fill="#f2f4fa" fill-opacity="0.92"/>
+  <rect x="190" y="326" width="150" height="54" fill="#15244d"/>
+  <circle cx="300" cy="346" r="12" fill="#ffc857"/>
+  <path d="M265 352 a40 12 0 1 0 80 0" fill="none" stroke="#5fd3e6" stroke-width="1.5"/>
+  <rect x="196" y="388" width="6" height="30" fill="#7c8bb5"/>
+  <rect x="328" y="388" width="6" height="30" fill="#7c8bb5"/>
+  <!-- diváci -->
+  <g fill="#060d22">
+    <ellipse cx="240" cy="452" rx="16" ry="10"/><circle cx="240" cy="436" r="8"/>
+    <ellipse cx="290" cy="458" rx="16" ry="10"/><circle cx="290" cy="442" r="8"/>
+    <ellipse cx="335" cy="450" rx="14" ry="9"/><circle cx="335" cy="436" r="7"/>
+    <ellipse cx="160" cy="460" rx="16" ry="10"/><circle cx="160" cy="444" r="8"/>
+    <ellipse cx="400" cy="462" rx="16" ry="10"/><circle cx="400" cy="446" r="8"/>
+  </g>
+  <!-- dalekohled -->
+  <g stroke="#b8c2dc" stroke-width="3" stroke-linecap="round">
+    <line x1="700" y1="420" x2="690" y2="460"/><line x1="700" y1="420" x2="712" y2="460"/>
+    <line x1="684" y1="428" x2="724" y2="396"/>
+  </g>
+</svg>
