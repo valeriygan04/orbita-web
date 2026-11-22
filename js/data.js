@@ -20,7 +20,7 @@ window.FESTIVAL_DATA = {
       },
       "poznamka": "Fiktivní festivalový areál vedle hvězdárny. Festival ani pořadatel nejsou s hvězdárnou spojeni. GPS je orientační."
     },
-    "web": "https://www.orbita-festival.example",
+    "web": "https://valeriygan04.github.io/orbita-web",
     "kontakt": {
       "email": "info@orbita-festival.example",
       "poradatel": "Orbita z. s. (fiktivní spolek)",
